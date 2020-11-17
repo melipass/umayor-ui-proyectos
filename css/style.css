@@ -1,0 +1,107 @@
+/* Universidad Mayor colors */
+:root {
+    --um-background: #FEDA3F;
+    --um-text: #3C3C3B;
+}
+
+/* Universidad Mayor's font */
+@font-face {
+    src: url('../assets/fonts/MyriadPro-Regular.otf');
+    font-family: Myriad;
+}
+
+
+/* Header */
+.container-fluid {
+    padding: 1rem;
+    background-color: var(--um-background);
+    color: var(--um-text);
+    font-family: Myriad;
+}
+
+/* Header project title text */
+.project-title {
+    font-family: Myriad;
+    color: var(--um-text);
+    font-size: x-large;
+    text-align: center;
+    margin-top: 3px;
+}
+
+/* Header Universidad Mayor logo */
+.um-logo-xs {
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .um-logo-md {
+        text-align: left;
+    }
+}
+
+/* Header user menu */
+[class*="user-menu"]{
+    font-size: large;
+}
+.user-menu-xs {
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .user-menu-md {
+        text-align: right;
+    }
+}
+#user-menu-dropdown{
+    color:var(--um-text);
+    text-decoration: none;
+}
+
+/* Ionicons.com icons */
+ion-icon {
+    font-size: 32px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Sidebar variables */
+#sidebar-wrapper {
+    min-height: 100vh;
+    background-color: #F9F9F9 !important;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+#sidebar-wrapper .menu-header {
+    padding: .875rem 1.25rem;
+    background-color: #5e5e5e !important;
+    color: #F9F9F9;
+    font-family: Myriad;
+    font-size: larger;
+}
+#sidebar-wrapper .menu-list {
+    width: 18rem;
+
+}
+#menu-list-items{
+    color: #0056B3;
+    text-decoration: none;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -20rem;
+    }
+  }
+  

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Administrador de Proyectos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Menu button and Universidad Mayor logo -->
+            <div class="col-12 col-md-5" id="um-logo-xs um-logo-md">
+                <button type="button" class="btn btn-outline-dark" id="menu-toggle"><ion-icon name="menu-outline" class="lead"></ion-icon></button>
+                <img src="assets\logos\LOGO-UM-COLOR-H.png" width="200px" alt="Logo de la Universidad Mayor" title="Universidad Mayor"/>
+            </div>
+            <!-- Page title -->
+            <div class="col-12 col-md-3">
+                <div class="project-title">Administrador de Proyectos</div>
+            </div>
+            <!-- User menu with dropdown -->
+            <div class="col-12 col-md-4">
+                <div class="user-menu-xs user-menu-md">
+                    <a class="dropdown-toggle" id="user-menu-dropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lorena Soto <ion-icon name="person-circle-outline"></ion-icon>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="user-menu-dropdown">
+                        <a class="dropdown-item" href="#">Notificaciones</a>
+                        <a class="dropdown-item" href="#">Configuración</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header end-->
+
+    <!-- Content wrapper -->
+    <div class="d-flex" id="wrapper">
+        <div id="sidebar-wrapper" class="bg-primary">
+            <div class="menu-header">
+                Menú
+            </div>
+            <div class="menu-list">
+                <a href="#" class="d-block p-3" id="menu-list-items"><ion-icon name="arrow-forward-outline" class="mr-2 lead"></ion-icon>Item</a>
+                <a href="#" class="d-block p-3" id="menu-list-items"><ion-icon name="arrow-forward-outline" class="mr-2 lead"></ion-icon>Item</a>
+                <a href="#" class="d-block p-3" id="menu-list-items"><ion-icon name="arrow-forward-outline" class="mr-2 lead"></ion-icon>Item</a>
+                <a href="#" class="d-block p-3" id="menu-list-items"><ion-icon name="arrow-forward-outline" class="mr-2 lead"></ion-icon>Item</a>
+                <a href="#" class="d-block p-3" id="menu-list-items"><ion-icon name="arrow-forward-outline" class="mr-2 lead"></ion-icon>Item</a>
+            </div> 
+        </div>
+            <!-- Page content -->
+        <div id="page-content-wrapper">
+            <div class="container">
+            <h1 class="mt-4">Proyecto "Interfaz para gestión de proyectos"</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tellus dui, pulvinar id tortor eu, pharetra pulvinar tellus. Quisque eu ultricies neque. Praesent sed metus felis. Nullam sem urna, semper a dolor et, malesuada suscipit augue. Duis in urna eget purus luctus lacinia. Cras interdum rhoncus metus non lacinia. Nunc eget massa et orci dapibus dignissim vitae a sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse tempus congue risus at tristique. Donec ac imperdiet lorem, id tincidunt nulla. Pellentesque sagittis nunc non nunc consequat congue. Etiam nec ultrices lectus. Mauris a velit dolor. Nunc bibendum risus ex. Donec congue magna et magna vehicula rutrum. Integer magna massa, semper sit amet nibh at, pharetra facilisis est. </p>
+            <p>Vivamus non convallis leo. Praesent quis massa lorem. Nulla vel consectetur tortor. Vestibulum et ante tincidunt, tempus nulla vel, ullamcorper magna. Proin non semper risus, sit amet varius erat. Quisque enim augue, consequat sed nunc commodo, feugiat convallis ligula. Nullam laoreet elementum dolor a rhoncus. Mauris egestas purus a lorem ornare posuere. Aenean rutrum viverra eleifend. Morbi mauris lorem, ultrices at laoreet luctus, mattis ut ligula. Sed aliquam malesuada metus sollicitudin consequat. Proin id iaculis risus, sed vulputate ex. Morbi commodo lorem enim, interdum maximus dolor tempor sed. Nullam dignissim consectetur elit, nec gravida sapien tincidunt eu. </p>
+            </div>
+        </div>
+    </div>
+    <!-- Sidebar end -->
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+
+    <script>
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+        });
+      </script>
+</body>
+</html>
