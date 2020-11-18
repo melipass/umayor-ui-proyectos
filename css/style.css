@@ -31,7 +31,7 @@
     color: var(--um-text);
     font-size: x-large;
     text-align: center;
-    margin-top: 3px;
+    /*margin-top: 3px;*/
 }
 
 
@@ -91,15 +91,15 @@ ion-icon {
 }
 
 #sidebar-wrapper .menu-header {
-    padding: .875rem 1.25rem;
-    background-color: #5e5e5e !important;
+    padding: 1.25rem 1.25rem;
+    background-color: #262626 !important;
     color: #F9F9F9;
     font-family: Myriad;
     font-size: larger;
 }
 
 #sidebar-wrapper .menu-list {
-    width: 18rem;
+    width: 15rem;
 }
 
 #menu-list-items {
@@ -120,7 +120,7 @@ ion-icon {
         width: 100%;
     }
     #wrapper.toggled #sidebar-wrapper {
-        margin-left: -20rem;
+        margin-left: -15rem;
     }
 }
 
