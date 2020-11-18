@@ -138,3 +138,21 @@ ion-icon {
 #card_bodyID {
     background-color: #94c998;
 }
+
+
+/******************************************/
+
+
+/*central overview item*/
+
+#row_overview {
+    padding-left: 240px;
+}
+
+.skills {
+    margin-top: 10px;
+}
+
+#titulo_overview {
+    text-align: center;
+}
