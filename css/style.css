@@ -1,20 +1,20 @@
 /* Universidad Mayor colors */
-
+/* These are the same as the Manual Uso de Marca document */
 :root {
     --um-background: #FEDA3F;
     --um-text: #3C3C3B;
 }
 
 
-/* Universidad Mayor's font */
-
+/* Universidad Mayor font */
+/* we'll be using a public domain MyriadPro lookalike */
 @font-face {
     src: url('../assets/fonts/Vegur-Yg1a.otf');
     font-family: Myriad;
 }
 
 
-/* Header */
+/* Header variables */
 
 .container-fluid {
     padding: 1rem;
@@ -23,19 +23,13 @@
     font-family: Myriad;
 }
 
-
-/* Header project title text */
-
-.project-title {
+.page-title {
     font-family: Myriad;
     color: var(--um-text);
     font-size: x-large;
     text-align: center;
     /*margin-top: 3px;*/
 }
-
-
-/* Header Universidad Mayor logo */
 
 .um-logo-xs {
     text-align: center;
@@ -46,9 +40,6 @@
         text-align: left;
     }
 }
-
-
-/* Header user menu */
 
 [class*="user-menu"] {
     font-size: large;
@@ -78,12 +69,11 @@ ion-icon {
     vertical-align: middle;
 }
 
-
 /* Sidebar variables */
 
 #sidebar-wrapper {
     min-height: 100vh;
-    background-color: #F9F9F9 !important;
+    background-color: #F9F9F9;
     -webkit-transition: margin .25s ease-out;
     -moz-transition: margin .25s ease-out;
     -o-transition: margin .25s ease-out;
@@ -92,7 +82,7 @@ ion-icon {
 
 #sidebar-wrapper .menu-header {
     padding: 1.25rem 1.25rem;
-    background-color: #262626 !important;
+    background-color: #262626;
     color: #F9F9F9;
     font-family: Myriad;
     font-size: larger;
@@ -106,12 +96,21 @@ ion-icon {
     color: #0056B3;
     text-decoration: none;
 }
+#menu-list-items:hover {
+    background-color: #f0f0f0;
+}
+
+#menu-list-items-active {
+    background-color: #ebebeb;
+    text-decoration: none;
+}
 
 #wrapper.toggled #sidebar-wrapper {
     margin-left: 0;
 }
 
-@media (min-width: 768px) {
+
+@media (min-width: 1px) {
     #sidebar-wrapper {
         margin-left: 0;
     }

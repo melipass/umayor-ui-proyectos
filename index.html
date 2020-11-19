@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Administrador de Proyectos</title>
+
+    <!-- CSS files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
     <!-- Content wrapper -->
     <div class="d-flex" id="wrapper">
 
         <!-- Sidebar -->
-        <div id="sidebar-wrapper" class="bg-primary">
+        <div id="sidebar-wrapper"> <!-- class="bg-primary" -->
             <div class="menu-header">
                 Menú
             </div>
             <div class="menu-list">
-                <a href="index.html" class="d-block p-3" id="menu-list-items">
+                <a href="index.html" class="d-block p-3" id="menu-list-items-active">
                     <ion-icon name="home-outline" class="mr-2 lead"></ion-icon>Página principal</a>
                 <a href="#" class="d-block p-3" id="menu-list-items">
                     <ion-icon name="folder-outline" class="mr-2 lead"></ion-icon>Proyectos actuales</a>
@@ -36,7 +34,6 @@
                     <ion-icon name="people-outline" class="mr-2 lead"></ion-icon>Cuentas</a>
             </div>
         </div>
-
 
         <div id="page-content-wrapper">
 
@@ -50,7 +47,7 @@
                     </div>
                     <!-- Page title -->
                     <div class="col-12 col-md-4">
-                        <div class="project-title">Administrador de Proyectos</div>
+                        <div class="page-title">Administrador de Proyectos</div>
                     </div>
                     <!-- User menu with dropdown -->
                     <div class="col-12 col-md-4">
@@ -69,9 +66,8 @@
                 </div>
             </div>
 
-
             <!-- Main content -->
-            <div class="container">
+            <div class="container" id="page-content">
                 <h1 class="col-mt-4">Proyecto "Interfaz para gestión de proyectos"</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tellus dui, pulvinar id tortor eu, pharetra pulvinar tellus. Quisque eu ultricies neque. Praesent sed metus felis. Nullam sem urna, semper a dolor et, malesuada suscipit augue.
                     Duis in urna eget purus luctus lacinia. Cras interdum rhoncus metus non lacinia. Nunc eget massa et orci dapibus dignissim vitae a sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse tempus congue risus
@@ -153,21 +149,17 @@
                     </div>
 
                 </div>
-
             </div>
         </div>
+    </div>
 
-
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-        <script>
-            $("#menu-toggle").click(function(e) {
-                e.preventDefault();
-                $("#wrapper").toggleClass("toggled");
-            });
-        </script>
+    <!-- JavaScript files -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw==" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="js/sidebar.js"></script>
 </body>
 
 </html>
