@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Título de la página</title>
+    <title>Listado de proyectos</title>
 
     <!-- CSS files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -70,26 +70,20 @@
 
 
             <div class="container" id="page-content">
-            <!-- Main content -->
-            <!-- Main content -->
-            <!-- Main content -->
-            <!-- Main content -->
-            <!-- Main content -->
-            <!-- Main content -->
-            <!-- Main content -->
-            <!-- Main content -->
-            <!-- Main content -->
-            <!-- Main content -->
-            <!-- Main content -->
-            <!-- Main content -->
-            <!-- Main content -->
-            <!-- Main content -->
-            <!-- Main content -->
-            <!-- Main content -->
-            <!-- Main content -->
-            </div>
-        </div>
+                <h1>Proyectos de ingeniería</h1>
+                <p>A continuación puede revisar los proyectos de ingeniería disponibles.</p>
+                <ul class="nav nav-tabs">
+                    <li role="" class="active"><a href="#" id="proy1-tab">Por estudiante</a></li>
+                    <li role=""><a href="#" id="proy2-tab" >Por tipo de proyecto</a></li>
+                    <li role=""><a href="#" id="proyat-tab" >Por malla</a></li>
+                </ul>
+                <br/><br/>
 
+
+                <!-- Empty content to be filled with templates -->
+                <div id="content-to-fill"  class="container-fluid"  role="main">
+                </div>
+            </div>
 
      <!-- JavaScript files -->
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -98,6 +92,63 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw==" crossorigin="anonymous"></script>
      <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
      <script src="js/sidebar.js"></script>
+     <script src="js/studentdata.js"></script>
+     <script src="js/students.js"></script>
+
+        <!-- Student template -->
+        <script id="students-template" type="text/x-handlebars-template">
+            <div class="row">
+
+                {{#each students}}
+                <div class="col-xs-12 col-md-3"> 
+                        <div class="student-thumbnail"  data-id="{{@index}}">
+                            <img class="crop-img" src="{{thumbnail}}" alt=""/> 
+                                <div class="caption">
+                                    <h4> {{name}} </h4>
+                                    <!--<p>{{student.length}} proyectos.</p>-->
+                                </div>
+                        </div>
+                </div>
+                {{/each}}
+
+            </div> 
+        </script>
+
+        <!-- Projects template -->
+        <script id="projects-template" type="text/x-handlebars-template">
+            <div class="row">
+          
+                {{#each projects}}
+                <div class="col-xs-12 col-md-3"> 
+                <div class="project-thumbnail"  data-id="{{@index}}">
+                    <img class="crop-img" src="{{src}}" alt=""/> 
+                        
+                    <div class="caption">
+                        <h3>{{title}}</h3>
+                        <p>{{description}}</p>
+                    </div>
+                    </div>
+                </div> 
+                {{/each}}
+                
+            </div> 
+        </script>
+
+        <!-- Project template -->
+        <script id="project-template" type="text/x-handlebars-template">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <img class="large-img" src="{{src}}" alt="" />
+
+                    <div class="caption">
+                        <h3>{{title}}</h3>
+                        <p>{{description}}</p>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+
 </body>
 
 </html>

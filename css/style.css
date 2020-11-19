@@ -16,7 +16,7 @@
 
 /* Header variables */
 
-.container-fluid {
+#header {
     padding: 1rem;
     background-color: var(--um-background);
     color: var(--um-text);
@@ -155,3 +155,13 @@ ion-icon {
 #titulo_overview {
     text-align: center;
 }
+
+/* ******+ */
+.crop-img{
+    max-height:150px;
+    max-width:100%;
+  }
+  
+  .large-img{
+    max-width:100%;
+  }
