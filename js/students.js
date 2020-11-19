@@ -38,3 +38,5 @@ $("#proy1-tab").click(function(){
         })
     })
 })
+
+$("#proy1-tab").click()

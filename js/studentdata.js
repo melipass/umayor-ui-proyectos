@@ -2,7 +2,12 @@ var career = {
 	students : [
 		{
 			name : "Alice", 
+			surname: "Smith",
 			thumbnail : "images/alice/photo.jpg",
+			contactinfo : {
+				phone : "+56912345678",
+				email : "alice.smith@mayor.cl"
+			},
 			projects : [
 				{	
 					src : "images/alice/1.jpg",
@@ -23,8 +28,13 @@ var career = {
 		},
 		{
 			name : "Bob", 
+			surname: "Green",
 			thumbnail : "images/bob/photo.jpg",
-			photos : [
+			contactinfo : {
+				phone : "+56987654321",
+				email : "bob.green@mayor.cl"
+			},
+			projects : [
 				{	
 					src : "images/bob/1.jpg",
 					title : "Proyecto de Ingeniería I", 

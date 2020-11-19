@@ -18,7 +18,7 @@
     <div class="d-flex" id="wrapper">
 
         <!-- Sidebar -->
-        <div id="sidebar-wrapper" class="bg-primary">
+        <div id="sidebar-wrapper">
             <div class="menu-header">
                 Menú
             </div>
@@ -73,9 +73,9 @@
                 <h1>Proyectos de ingeniería</h1>
                 <p>A continuación puede revisar los proyectos de ingeniería disponibles.</p>
                 <ul class="nav nav-tabs">
-                    <li role="" class="active"><a href="#" id="proy1-tab">Por estudiante</a></li>
-                    <li role=""><a href="#" id="proy2-tab" >Por tipo de proyecto</a></li>
-                    <li role=""><a href="#" id="proyat-tab" >Por malla</a></li>
+                    <li role="" class="active"><a href="#" id="proy1-tab"> Por estudiante </a></li>
+                    <li role=""><a href="#" id="proy2-tab" > Por tipo de proyecto </a></li>
+                    <li role=""><a href="#" id="proyat-tab" > Por malla </a></li>
                 </ul>
                 <br/><br/>
 
@@ -94,6 +94,9 @@
      <script src="js/sidebar.js"></script>
      <script src="js/studentdata.js"></script>
      <script src="js/students.js"></script>
+     <script>$("document").ready(function() { 
+        $("#proy1-tab").trigger('click'); 
+    }); </script>
 
         <!-- Student template -->
         <script id="students-template" type="text/x-handlebars-template">
@@ -104,7 +107,7 @@
                         <div class="student-thumbnail"  data-id="{{@index}}">
                             <img class="crop-img" src="{{thumbnail}}" alt=""/> 
                                 <div class="caption">
-                                    <h4> {{name}} </h4>
+                                    <h4> {{name}} {{surname}} </h4>
                                     <!--<p>{{student.length}} proyectos.</p>-->
                                 </div>
                         </div>
@@ -117,14 +120,25 @@
         <!-- Projects template -->
         <script id="projects-template" type="text/x-handlebars-template">
             <div class="row">
-          
+                <div class="col-xs-12 col-md-12">
+                    <img class="crop-img" src="{{thumbnail}}" alt="" />
+                    <h2> {{name}} {{surname}}</h2>
+                    <h3> Datos de contacto</h3>
+                    <ul>
+                        <li>Teléfono: {{contactinfo.phone}}</li>
+                        <li>Correo electrónico: {{contactinfo.email}}</li>
+                    </ul>
+                    <h3>Proyectos</h3>
+                </div>
+            </div>
+            <div class="row">
                 {{#each projects}}
                 <div class="col-xs-12 col-md-3"> 
                 <div class="project-thumbnail"  data-id="{{@index}}">
                     <img class="crop-img" src="{{src}}" alt=""/> 
                         
                     <div class="caption">
-                        <h3>{{title}}</h3>
+                        <h5>{{title}}</h5>
                         <p>{{description}}</p>
                     </div>
                     </div>
@@ -143,11 +157,11 @@
                     <div class="caption">
                         <h3>{{title}}</h3>
                         <p>{{description}}</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
         </script>
-
 
 </body>
 
