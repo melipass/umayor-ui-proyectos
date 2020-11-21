@@ -73,9 +73,9 @@
                 <h1>Proyectos de ingeniería</h1>
                 <p>A continuación puede revisar los proyectos de ingeniería disponibles.</p>
                 <ul class="nav nav-tabs">
-                    <li role="" class="active"><a href="#" id="proy1-tab"> Por estudiante </a></li>
-                    <li role=""><a href="#" id="proy2-tab" > Por tipo de proyecto </a></li>
-                    <li role=""><a href="#" id="proyat-tab" > Por malla </a></li>
+                    <li class="nav-item" role=""><a class="nav-link active" href="#" id="proy1-tab"> Por estudiante </a></li>
+                    <li class="nav-item" role=""><a class="nav-link" href="#" id="proy2-tab" > Por tipo de proyecto </a></li>
+                    <li class="nav-item" role=""><a class="nav-link" href="#" id="proyat-tab" > Por malla </a></li>
                 </ul>
                 <br/><br/>
 
@@ -101,7 +101,6 @@
         <!-- Student template -->
         <script id="students-template" type="text/x-handlebars-template">
             <div class="row">
-
                 {{#each students}}
                 <div class="col-xs-12 col-md-3"> 
                         <div class="student-thumbnail"  data-id="{{@index}}">
@@ -121,26 +120,37 @@
         <script id="projects-template" type="text/x-handlebars-template">
             <div class="row">
                 <div class="col-xs-12 col-md-12">
-                    <img class="crop-img" src="{{thumbnail}}" alt="" />
-                    <h2> {{name}} {{surname}}</h2>
-                    <h3> Datos de contacto</h3>
-                    <ul>
-                        <li>Teléfono: {{contactinfo.phone}}</li>
-                        <li>Correo electrónico: {{contactinfo.email}}</li>
-                    </ul>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-3">
+                            <img class="crop-img" src="{{thumbnail}}" alt="" />
+                        </div>
+                        <div class="col-xs-12 col-md-9">
+                            <h2> {{name}} {{surname}}
+                                <a href="tel:{{contactinfo.phone}}" title="Teléfono: {{contactinfo.phone}}" ><ion-icon name="call-outline" class="mr-2 lead"></ion-icon></a>
+                                <a href="mailto:{{contactinfo.email}}" title="Correo: {{contactinfo.mail}}"><ion-icon name="mail-outline" class="mr-2 lead"></ion-icon></a>
+                            </h2>
+                            <ul>
+                                <li><strong>Situación</strong>: {{status}}</li>
+                                <li><strong>Carrera</strong>: {{career}}</li>
+                                <li><strong>Malla</strong>: {{curriculum}}</li>
+                                <li><strong>Cohorte</strong>: {{cohort}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br />
                     <h3>Proyectos</h3>
                 </div>
             </div>
             <div class="row">
                 {{#each projects}}
-                <div class="col-xs-12 col-md-3"> 
-                <div class="project-thumbnail"  data-id="{{@index}}">
-                    <img class="crop-img" src="{{src}}" alt=""/> 
-                        
-                    <div class="caption">
-                        <h5>{{title}}</h5>
-                        <p>{{description}}</p>
-                    </div>
+                <div class="col-xs-12 col-md-3">
+                    <div class="card border-{{bscolor}} project-thumbnail" style="width: 95%;" data-id="{{@index}}" >
+                        <img class="card-img-top" src="{{src}}" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">{{title}}</h5>
+                            <p class="text-{{bscolor}}"><strong>{{status}}</strong></p>
+                            <p class="card-text">{{description}}</p>
+                        </div>
                     </div>
                 </div> 
                 {{/each}}
@@ -162,7 +172,6 @@
                 </div>
             </div>
         </script>
-
 </body>
 
 </html>
