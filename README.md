@@ -1,4 +1,4 @@
-![Logo Escuela Ingeniería Civil en Computación e Informática Universidad Mayor](logo-escuela.png)
+<img src="logo-escuela.png" width="500">
 
 # umayor-ui-proyectos
 
