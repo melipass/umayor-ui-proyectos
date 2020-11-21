@@ -73,9 +73,7 @@
                 <h1>Proyectos de ingeniería</h1>
                 <p>A continuación puede revisar los proyectos de ingeniería disponibles.</p>
                 <ul class="nav nav-tabs">
-                    <li class="nav-item" role=""><a class="nav-link active" href="#" id="proy1-tab"> Por estudiante </a></li>
-                    <li class="nav-item" role=""><a class="nav-link" href="#" id="proy2-tab" > Por tipo de proyecto </a></li>
-                    <li class="nav-item" role=""><a class="nav-link" href="#" id="proyat-tab" > Por malla </a></li>
+                    <li class="nav-item" role=""><a class="nav-link active" href="#" id="proy1-tab"> Proyectos </a></li>
                 </ul>
                 <br/><br/>
 
@@ -121,20 +119,21 @@
             <div class="row">
                 <div class="col-xs-12 col-md-12">
                     <div class="row">
-                        <div class="col-xs-12 col-md-3">
-                            <img class="crop-img" src="{{thumbnail}}" alt="" />
-                        </div>
-                        <div class="col-xs-12 col-md-9">
+                        
+                        <div class="col-xs-12 col-md-7">
                             <h2> {{name}} {{surname}}
                                 <a href="tel:{{contactinfo.phone}}" title="Teléfono: {{contactinfo.phone}}" ><ion-icon name="call-outline" class="mr-2 lead"></ion-icon></a>
                                 <a href="mailto:{{contactinfo.email}}" title="Correo: {{contactinfo.mail}}"><ion-icon name="mail-outline" class="mr-2 lead"></ion-icon></a>
                             </h2>
                             <ul>
-                                <li><strong>Situación</strong>: {{status}}</li>
+                                <li><strong>Situación</strong>: {{{status}}}</li>
                                 <li><strong>Carrera</strong>: {{career}}</li>
                                 <li><strong>Malla</strong>: {{curriculum}}</li>
                                 <li><strong>Cohorte</strong>: {{cohort}}</li>
                             </ul>
+                        </div>
+                        <div class="col-xs-12 col-md-5">
+                            <img style="width:95%;" src="{{thumbnail}}" alt="" />
                         </div>
                     </div>
                     <br />
@@ -147,9 +146,9 @@
                     <div class="card border-{{bscolor}} project-thumbnail" style="width: 95%;" data-id="{{@index}}" >
                         <img class="card-img-top" src="{{src}}" alt="">
                         <div class="card-body">
-                            <h5 class="card-title">{{title}}</h5>
+                            <h5 class="card-title">{{course}}</h5>
                             <p class="text-{{bscolor}}"><strong>{{status}}</strong></p>
-                            <p class="card-text">{{description}}</p>
+                            <p class="card-text">{{title}}</p>
                         </div>
                     </div>
                 </div> 
@@ -162,12 +161,45 @@
         <script id="project-template" type="text/x-handlebars-template">
             <div class="row">
                 <div class="col-xs-12 col-md-12">
-                    <img class="large-img" src="{{src}}" alt="" />
+                    <div class="row">
+                        <div class="col-xs-12 col-md-9">
+                            <div class="caption">
+                                <h2>{{title}}</h2>
+                                <div class="h-divider"></div>
+                                <h4>{{course}}</h4>
+                                <ul>
+                                    <li><strong>Profesor guía</strong>: {{academic}}</li>
+                                    <li><strong>Profesor revisor</strong>: {{revisor}}</li>
+                                    <li><strong>Estado del proyecto</strong> <span class="text-{{bscolor}}">{{status}}</span></li>
+                                    <li><strong>Futuro del proyecto</strong>: {{future}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3">
+                            <img style="width:95%;" src="{{src}}" alt="" title="Imagen del proyecto" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="h-divider"></div>
+                        <div class="col-12">
+                            <h4>Descripción del proyecto</h4>
+                            <p>{{details}}</p>
+                        </div>
+                        <div class="h-divider"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-3">
+                            <h4>Comité evaluador</h4>
+                            <ul>
+                                {{{committeemembers}}}
+                            </ul>
+                            {{{grade}}}
+                        </div>
+                        <div class="col-xs-12 col-md-9">
 
-                    <div class="caption">
-                        <h3>{{title}}</h3>
-                        <p>{{description}}</p>
-                        <p></p>
+                            <br /><h5>Comentarios</h5>
+                            <p>{{committeecomments}}</p>
+                        </div>
                     </div>
                 </div>
             </div>
