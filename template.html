@@ -18,7 +18,7 @@
     <div class="d-flex" id="wrapper">
 
         <!-- Sidebar -->
-        <div id="sidebar-wrapper" class="bg-primary">
+        <div id="sidebar-wrapper">
             <div class="menu-header">
                 Menú
             </div>
@@ -98,6 +98,19 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw==" crossorigin="anonymous"></script>
      <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
      <script src="js/sidebar.js"></script>
+
+    <!-- Sidebar template for further testing if there's time  -->
+    <!-- <script id="sidebar-template" type="text/x-handlebars-template">
+        <div class="menu-header">
+            Menú
+        </div>
+        <div class="menu-list">
+            {{#each item}}
+            <a href="{{url}}" class="d-block p-3" id="menu-list-items">
+                <ion-icon name="{{ionicon}}-outline" class="mr-2 lead"></ion-icon>{{title}}</a>                    
+            {{/each}}
+        </div>
+    </script> -->
 </body>
 
 </html>
