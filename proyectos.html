@@ -75,7 +75,7 @@
                 <ul class="nav nav-tabs">
                     <li class="nav-item" role=""><a class="nav-link active" href="#" id="proy1-tab"> Proyectos </a></li>
                 </ul>
-                <br/><br/>
+                <br/>
 
 
                 <!-- Empty content to be filled with templates -->
@@ -186,6 +186,64 @@
                             <p>{{details}}</p>
                         </div>
                         <div class="h-divider"></div>
+                    </div>
+                    <!-- Checklist -->
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <div class="card-header card-header-tabs card-header-primary">
+                                <span class="nav-tabs-title"><h4>Tareas</h4></span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table">
+                                        {{#each tasks}}
+                                        
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input style="display: none;" class="form-check-input" type="checkbox" value="" {{{checked}}}>
+                                                        <span class="form-check-sign">
+                                                        <span class="check"></span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>{{taskname}}</td>
+                                            <td class="td-actions text-right">
+                                                <button type="button" rel="tooltip" title="Editar tarea" class="btn btn-primary btn-link btn-sm">
+                                                    <ion-icon name="create-outline" class="mr-2 lead text-white"></ion-icon>
+                                                </button>
+                                                <button type="button" rel="tooltip" title="Remover tarea" class="btn btn-danger btn-link btn-sm">
+                                                    <ion-icon name="close-outline" class="mr-2 lead text-white"></ion-icon>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        {{/each}}
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="card-header card-header-tabs card-header-primary">
+                                <span class="nav-tabs-title"><h4>Documentos</h4></span>
+                            </div>
+                            <div class="card-body">
+                                <div class="row" style="text-align: center;">
+                                    <div class="col-4">
+                                        <img src="images/informe.png" width="90%" style="border: 1px solid rgb(197, 197, 197); margin-bottom: 5px;">
+                                        <button type="button" class="btn btn-light" style="border: 1px solid rgb(197, 197, 197);">Entrega 1</button>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="images/informe.png" width="90%" style="border: 1px solid rgb(197, 197, 197); margin-bottom: 5px;">
+                                        <button type="button" class="btn btn-light" style="border: 1px solid rgb(197, 197, 197);">Entrega 2</button>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="images/tesis.png" width="90%" style="border: 1px solid rgb(197, 197, 197); margin-bottom: 5px;">
+                                        <button type="button" class="btn btn-light" style="border: 1px solid rgb(197, 197, 197);">Tesis</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-12 col-md-3">
