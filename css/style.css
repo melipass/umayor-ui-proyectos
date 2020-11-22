@@ -194,11 +194,15 @@ ion-icon {
 
 #container_elementoCentral {
     margin-top: 30px;
-    background-color: #e7f2ff;
+    /*background-color: #e7f2ff;*/
+    border-color: var(--um-text);
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 4px;
 }
 
 #container_VistaUltimosProyectos {
-    background-color: #e7f2ff;
+    /*background-color: #e7f2ff;*/
     margin-top: 30px;
 }
 
@@ -214,4 +218,71 @@ ion-icon {
 
 #progress_VistaUltimosProyectos {
     margin-top: 10px;
+}
+
+#titulo_fila_elementoCentral {
+    margin: 10px;
+    /*background-color: #e9f2ff;*/
+    border-style: solid;
+    border-radius: 1px;
+    border-width: 1px;
+    border-top: rgb(0, 0, 0);
+    border-left: rgb(0, 0, 0);
+    border-right: rgb(0, 0, 0);
+}
+
+#titulo_proyecto_ElementoCentral {
+    margin: 10px;
+    font-style: italic;
+    background-color: #fafcff;
+    border-color: var(--um-text);
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+#progress_proyecto_ElementoCentral {
+    margin-top: 10px;
+}
+
+
+/*elemento de vista que muestra ultimos proyectos */
+
+#rowTitle_VistaUltimosProyectos {
+    margin: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    left: -10px;
+    border-style: solid;
+    border-radius: 1px;
+    border-width: 1px;
+    border-top: rgb(0, 0, 0);
+    border-left: rgb(0, 0, 0);
+    border-right: rgb(0, 0, 0);
+}
+
+#rowTitle_VistaUltimosProyectos2 {
+    margin: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    left: -25px;
+    border-style: solid;
+    border-radius: 1px;
+    border-width: 1px;
+    border-top: rgb(0, 0, 0);
+    border-left: rgb(0, 0, 0);
+    border-right: rgb(0, 0, 0);
+}
+
+#rowTitle_VistaUltimosProyectos3 {
+    margin: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    left: -39px;
+    border-style: solid;
+    border-radius: 1px;
+    border-width: 1px;
+    border-top: rgb(0, 0, 0);
+    border-left: rgb(0, 0, 0);
+    border-right: rgb(0, 0, 0);
 }
