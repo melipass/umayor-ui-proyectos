@@ -1,13 +1,19 @@
 /* Universidad Mayor colors */
+
+
 /* These are the same as the Manual Uso de Marca document */
+
 :root {
     --um-background: #FEDA3F;
     --um-text: #3C3C3B;
-
 }
 
+
 /* Universidad Mayor font */
+
+
 /* we'll be using a public domain MyriadPro lookalike */
+
 @font-face {
     src: url('../assets/fonts/Vegur-Yg1a.otf');
     font-family: Myriad;
@@ -69,6 +75,7 @@ ion-icon {
     vertical-align: middle;
 }
 
+
 /* Sidebar variables */
 
 #sidebar-wrapper {
@@ -96,6 +103,7 @@ ion-icon {
     color: #0056B3;
     text-decoration: none;
 }
+
 #menu-list-items:hover {
     background-color: #f0f0f0;
 }
@@ -108,7 +116,6 @@ ion-icon {
 #wrapper.toggled #sidebar-wrapper {
     margin-left: 0;
 }
-
 
 @media (min-width: 1px) {
     #sidebar-wrapper {
@@ -156,21 +163,55 @@ ion-icon {
     text-align: center;
 }
 
-/* ******+ */
-.crop-img{
-    max-height:150px;
-    max-width:100%;
-  }
-  
-  .large-img{
-    max-width:100%;
-    max-height:40%;
-  }
 
-  .h-divider{
-    margin-top:5px;
-    margin-bottom:5px;
-    height:1px;
-    width:100%;
-    border-top:1px solid lightgray;
-   }
+/* ******+ */
+
+.crop-img {
+    max-height: 150px;
+    max-width: 100%;
+}
+
+.large-img {
+    max-width: 100%;
+    max-height: 40%;
+}
+
+.h-divider {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 1px;
+    width: 100%;
+    border-top: 1px solid lightgray;
+}
+
+
+/*style para los elementeos de Mainpage*/
+
+#titulo_elementoCentral {
+    margin: 20px;
+    padding: 10px;
+}
+
+#container_elementoCentral {
+    margin-top: 30px;
+    background-color: #e7f2ff;
+}
+
+#container_VistaUltimosProyectos {
+    background-color: #e7f2ff;
+    margin-top: 30px;
+}
+
+#title_VistaUltimosProyectos {
+    margin: 20px;
+}
+
+#button_VistaUltimosProyectos {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    display: flex;
+}
+
+#progress_VistaUltimosProyectos {
+    margin-top: 10px;
+}
