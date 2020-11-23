@@ -229,3 +229,24 @@ ion-icon {
   .form-check .form-check-input:checked~.form-check-sign .check:before {
     box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px;
   }
+
+  .project-thumbnail{
+    width: 95%;
+    margin-bottom: 20px;
+  }
+
+  .project-document-thumbnail{
+    border: 1px solid rgb(197, 197, 197);
+    margin-bottom: 5px;
+  }
+
+  #edit-button{
+      width: 35px;
+      height: 30px;
+      border: 1px solid rgb(197, 197, 197);
+
+  }
+  #edit-button ion-icon{
+      vertical-align: -5px;
+      color: black;
+  }

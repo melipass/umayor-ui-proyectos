@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tus proyectos de ingeniería</title>
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Content wrapper -->
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <div class="menu-header">
+                Menú
+            </div>
+            <div class="menu-list">
+                <a href="index.html" class="d-block p-3" id="menu-list-items">
+                    <ion-icon name="home-outline" class="mr-2 lead"></ion-icon>Página principal</a>
+                <a href="proyectos-estudiante.html" class="d-block p-3" id="menu-list-items">
+                    <ion-icon name="folder-outline" class="mr-2 lead"></ion-icon>Tus proyectos</a>
+                <a href="#" class="d-block p-3" id="menu-list-items">
+                    <ion-icon name="stats-chart-outline" class="mr-2 lead"></ion-icon>Reportes</a>
+                <a href="#" class="d-block p-3" id="menu-list-items">
+                    <ion-icon name="mail-outline" class="mr-2 lead"></ion-icon>Mensajes</a>
+                <a href="#" class="d-block p-3" id="menu-list-items">
+                    <ion-icon name="people-outline" class="mr-2 lead"></ion-icon>Perfil</a>
+            </div>
+        </div>
+
+
+        <div id="page-content-wrapper">
+
+            <!-- Header menu -->
+            <div id="header" class="container-fluid">
+                <div class="row">
+                    <!-- Menu button and Universidad Mayor logo -->
+                    <div class="col-12 col-md-4" id="um-logo-xs um-logo-md">
+                        <button type="button" class="btn btn-outline-dark" id="menu-toggle"><ion-icon name="menu-outline" class="lead"></ion-icon></button>
+                        <img src="assets\logos\LOGO-UM-COLOR-H.png" width="200px" alt="Logo de la Universidad Mayor" title="Universidad Mayor" />
+                    </div>
+                    <!-- Page title -->
+                    <div class="col-12 col-md-4">
+                        <div class="page-title">Proyectos de Ingeniería</div>
+                    </div>
+                    <!-- User menu with dropdown -->
+                    <div class="col-12 col-md-4">
+                        <div class="user-menu-xs user-menu-md">
+                            <a class="dropdown-toggle" id="user-menu-dropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Carlos Pérez <ion-icon name="person-circle-outline"></ion-icon>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="user-menu-dropdown">
+                                <a class="dropdown-item" href="#">Notificaciones</a>
+                                <a class="dropdown-item" href="#">Configuración</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Cerrar sesión</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="page-content">
+                <br />
+                <h1>Tus proyectos</h1>
+                <p>Te damos la bienvenida a tus proyectos de ingeniería. En esta página, podrás consultar la información actualizada de tus proyectos.</p>
+                
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item" role=""><a class="nav-link active" href="#" id="students-view-tab"> Perfil </a></li>
+                </ul>
+                <br/>
+                <!-- Empty content to be filled with templates -->
+                <div id="content-to-fill-to"  class="container-fluid"  role="main">
+                </div>
+            </div>
+        </div>
+
+
+     <!-- JavaScript files -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw==" crossorigin="anonymous"></script>
+     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+     <script src="js/sidebar.js"></script>
+     <script src="js/studentdata.js"></script>
+     <script src="js/students-student-view.js"></script>
+     <script>
+        $("document").ready(function() { 
+            $("#students-view-tab").trigger('click'); 
+        });
+    </script>
+
+
+    <!-- Projects template -->
+    <script id="student-view-projects-template" type="text/x-handlebars-template">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div class="row">
+                    <div class="col-xs-12 col-md-7">
+                        <h2> {{name}} {{surname}}</h2>
+                        <br />
+                        <div class="card">
+                          <div class="card-body">
+                            <blockquote class="blockquote">
+                              <p>Último comentario de tu profesor guía</p>
+                              <footer class="card-blockquote"><cite style="font-size:15px;" title="Source title">Debemos agendar una reunión lo antes posible, te estás atrasando con el trabajo y me preocupa que no puedas cumplir con la fecha de entrega establecida.</cite></footer>
+                            </blockquote>
+                            <span style="float:right;"><button type="button" class="btn btn-light" style="border: 1px solid rgb(197, 197, 197);">Responder</button></span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-5">
+                        <img style="width:95%;" src="{{thumbnail}}" alt="" />
+                    </div>
+                </div>
+                <br />
+                <h3>Proyectos</h3>
+            </div>
+        </div>
+        <div class="row">
+            {{#each projects}}
+            <div class="col-xs-12 col-md-3">
+                <div class="card border-{{bscolor}} project-thumbnail" data-id="{{@index}}" >
+                    <img class="card-img-top" src="{{src}}" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">{{course}}</h5>
+                        <p class="text-{{bscolor}}"><strong>{{status}}</strong></p>
+                        <p class="card-text">{{title}}</p>
+                    </div>
+                </div>
+            </div> 
+            {{/each}}
+            
+        </div> 
+    </script>
+
+    <!-- Project template -->
+    <script id="student-view-project-template" type="text/x-handlebars-template">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div class="row">
+                    <div class="col-xs-12 col-md-8">
+                        <div class="caption">
+                            <h3>{{title}}</h3>
+                            <div class="h-divider"></div>
+                            <h5 style="color: gray; font-weight: 300;">{{course}}</h5>
+                            <div style="margin-top:20px;">
+                                
+                            <ul>
+                                <li><strong>Profesor guía</strong>: {{academic}}</li>
+                                <li><strong>Profesor revisor</strong>: {{revisor}}</li>
+                                <li><strong>Estado del proyecto: <span class="text-{{bscolor}}">{{status}}</span></strong>. {{future}}</li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br /><br />
+                    <div class="col-xs-12 col-md-4">
+                        <img style="width:95%;" src="{{src}}" alt="" title="Imagen del proyecto" />
+                        
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="h-divider"></div>
+                    <div class="col-12"><br />
+                        <h4>Descripción del proyecto <button type="button" rel="tooltip" title="Editar tarea" id="edit-button" class="btn btn-light btn-link btn-sm">
+                            <ion-icon name="create-outline" class="mr-2 lead text-black"></ion-icon>
+                        </button></h4>
+                        <p>{{details}}</p>
+                        <br />
+                    </div>
+                    <div class="h-divider"></div>
+                </div>
+                <!-- Checklist -->
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <br />
+                        <div class="card-header card-header-tabs card-header-primary">
+                            <span class="nav-tabs-title"><h4>Tareas</h4></span>
+                        </div>
+                        <div class="card-body">
+                            <table class="table">
+                                    {{#each tasks}}
+                                    
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input style="display: none;" class="form-check-input" type="checkbox" disabled value="" {{{checked}}}>
+                                                    <span class="form-check-sign">
+                                                    <span class="check"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>{{taskname}}</td>
+                                    </tr>
+                                    {{/each}}
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <br />
+                        <div class="card-header card-header-tabs card-header-primary">
+                            <span class="nav-tabs-title"><h4>Documentos                                 <span style="float:right;"><button type="button" class="btn btn-light" style="border: 1px solid rgb(197, 197, 197);">Subir nuevo documento</button></span>
+                            </h4></span>
+                        </div>
+                        <div class="card-body">
+                            <div class="row" style="text-align: center;">
+                                <div class="col-4">
+                                    <img src="images/informe.png" width="90%" class="project-document-thumbnail">
+                                    <button type="button" class="btn btn-light" style="border: 1px solid rgb(197, 197, 197);">Entrega 1</button>
+                                </div>
+                                <div class="col-4">
+                                    <img src="images/informe.png" width="90%" class="project-document-thumbnail">
+                                    <button type="button" class="btn btn-light" style="border: 1px solid rgb(197, 197, 197);">Entrega 2</button>
+                                </div>
+                                <div class="col-4">
+                                    <img src="images/tesis.png" width="90%" class="project-document-thumbnail">
+                                    <button type="button" class="btn btn-light" style="border: 1px solid rgb(197, 197, 197);">Tesis</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-divider"></div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <br />
+                        <h4>Comité evaluador</h4>
+                        <ul>
+                            {{{committeemembers}}}
+                        </ul>
+                        <p>{{{grade}}}</p>
+                    </div>
+                    <div class="col-xs-12 col-md-9">
+                        <br />
+                        <br /><h5>Comentarios</h5>
+                        <p>{{committeecomments}}</p>
+                        <span style="float:right;"><button type="button" class="btn btn-light" style="border: 1px solid rgb(197, 197, 197);">Responder comentarios</button></span>
+                    </div>
+                    
+                </div><br /><br />
+            </div>
+        </div>
+    </script>
+</body>
+
+</html>
