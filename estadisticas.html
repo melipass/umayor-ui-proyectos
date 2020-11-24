@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Título de la página</title>
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Content wrapper -->
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <div class="menu-header">
+                Menú
+            </div>
+            <div class="menu-list">
+                <a href="index.html" class="d-block p-3" id="menu-list-items">
+                    <ion-icon name="home-outline" class="mr-2 lead"></ion-icon>Página principal</a>
+                <a href="#" class="d-block p-3" id="menu-list-items">
+                    <ion-icon name="folder-outline" class="mr-2 lead"></ion-icon>Proyectos actuales</a>
+                <a href="#" class="d-block p-3" id="menu-list-items">
+                    <ion-icon name="stats-chart-outline" class="mr-2 lead"></ion-icon>Reportes</a>
+                <a href="#" class="d-block p-3" id="menu-list-items">
+                    <ion-icon name="mail-outline" class="mr-2 lead"></ion-icon>Mensajes</a>
+                <a href="#" class="d-block p-3" id="menu-list-items">
+                    <ion-icon name="people-outline" class="mr-2 lead"></ion-icon>Cuentas</a>
+            </div>
+        </div>
+
+
+        <div id="page-content-wrapper">
+
+            <!-- Header menu -->
+            <div id="header" class="container-fluid">
+                <div class="row">
+                    <!-- Menu button and Universidad Mayor logo -->
+                    <div class="col-12 col-md-4" id="um-logo-xs um-logo-md">
+                        <button type="button" class="btn btn-outline-dark" id="menu-toggle"><ion-icon name="menu-outline" class="lead"></ion-icon></button>
+                        <img src="assets\logos\LOGO-UM-COLOR-H.png" width="200px" alt="Logo de la Universidad Mayor" title="Universidad Mayor" />
+                    </div>
+                    <!-- Page title -->
+                    <div class="col-12 col-md-4">
+                        <div class="page-title">Administrador de Proyectos</div>
+                    </div>
+                    <!-- User menu with dropdown -->
+                    <div class="col-12 col-md-4">
+                        <div class="user-menu-xs user-menu-md">
+                            <a class="dropdown-toggle" id="user-menu-dropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Lorena Soto <ion-icon name="person-circle-outline"></ion-icon>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="user-menu-dropdown">
+                                <a class="dropdown-item" href="#">Notificaciones</a>
+                                <a class="dropdown-item" href="#">Configuración</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Cerrar sesión</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container" id="page-content">
+                <br />
+                <div class=row>
+                    <h2>Estadísticas de proyectos</h2>
+                </div>
+                <div class=row>
+                    <div class="col-xs-12 col-md-6">
+                        <h4>Proyectos este semestre</h4>
+                        <div class="ct-chart ct-golden-section" id="projects-this-semester"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <h4>Entregas históricas de PROYATs</h4>
+                        <div class="ct-chart ct-golden-section" id="projects-by-completion-status"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <h4>Notas históricas de los últimos 10 proyectos completados</h4>
+                        <div class="ct-chart ct-octave" style="height: 400px;" id="project-I-grades"></div></div>
+                    <div class="col-xs-12 col-md-6">
+                        <h4>Cantidad de proyectos entregados por trimestre (2019 vs. 2020)</h4>
+                        <div class="ct-chart ct-octave" id="comparison-with-last-year-by-trimester"></div>
+                        <br/><br/>
+                        <p style="float:right;"><button type="button" class="btn btn-light" style="margin:5px; border: 1px solid rgb(197, 197, 197);">Descargar datos en CSV</button></p>
+                        <p style="float:right;"><button type="button" class="btn btn-light" style="margin:5px; border: 1px solid rgb(197, 197, 197);">Descargar gráficos en PDF</button></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+     <!-- JavaScript files -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw==" crossorigin="anonymous"></script>
+     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+     <script src="js/sidebar.js"></script>
+     <script src="js/charts.js"></script>
+     
+    <!-- Sidebar template for further testing if there's time  -->
+    <!-- <script id="sidebar-template" type="text/x-handlebars-template">
+        <div class="menu-header">
+            Menú
+        </div>
+        <div class="menu-list">
+            {{#each item}}
+            <a href="{{url}}" class="d-block p-3" id="menu-list-items">
+                <ion-icon name="{{ionicon}}-outline" class="mr-2 lead"></ion-icon>{{title}}</a>                    
+            {{/each}}
+        </div>
+    </script> -->
+</body>
+
+</html>
