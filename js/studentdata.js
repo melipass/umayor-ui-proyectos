@@ -26,7 +26,21 @@ var career = {
 					details: "Desarrollo de un sistema de automatización de procesos de compra a proveedores y venta a clientes, además de archivado de transacciones, para gran empresa del retail. Proyecto desarrollado a través de empresa consultora Roboc que comprende la fase de diseño y prototipado del sistema.",
 					grade: "<span><strong>   Nota final: </strong> 6.5</span>",
 					committeemembers: "<li>Alejandra Acuña</li><li>Yuri Caceres</li><li>Nestor Gonzalez</li><li>Julian Gil</li><li>Jorge Cornejo</li>",
-					committeecomments: "El trabajo logra con lo esperado de un anteproyecto, y cumple con las condiciones para seguir siendo trabajado en la fase Proyecto de Ingeniería II. Se recomienda tomar en consideración los riesgos de implementar este sistema en el ambiente de producción actual de la empresa."
+					committeecomments: "El trabajo logra con lo esperado de un anteproyecto, y cumple con las condiciones para seguir siendo trabajado en la fase Proyecto de Ingeniería II. Se recomienda tomar en consideración los riesgos de implementar este sistema en el ambiente de producción actual de la empresa.",
+					tasks: [
+						{
+							taskname: "Envía anteproyecto.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Revisado por el profesor guía.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Enviado a ORE.",
+							checked: ''
+						}
+					]
 				}, 
 				{	
 					src : "images/alicia_soto/2.jpg",
@@ -40,7 +54,21 @@ var career = {
 					details: "Desarrollo de un sistema de automatización de procesos de compra a proveedores y venta a clientes, además de archivado de transacciones, para gran empresa del retail. Proyecto desarrollado a través de empresa consultora Roboc, en sus etapas de desarrollo y testeo.",
 					grade: "<span><strong>   Nota final: </strong> 6.5</span>",
 					committeemembers: "<li>Alejandra Acuña</li><li>Yuri Caceres</li><li>Nestor Gonzalez</li><li>Julian Gil</li><li>Jorge Cornejo</li>",
-					committeecomments: "El proyecto presentado supera las expectativas del comité, cumpliendo con todos los requisitos presentados y las metas establecidas, pudiendo continuar hacia la fase de Proyecto Aplicado de Título.."
+					committeecomments: "El proyecto presentado supera las expectativas del comité, cumpliendo con todos los requisitos presentados y las metas establecidas, pudiendo continuar hacia la fase de Proyecto Aplicado de Título..",
+					tasks: [
+						{
+							taskname: "Envía anteproyecto.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Revisado por el profesor guía.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Enviado a ORE.",
+							checked: ''
+						}
+					]
 				}, 
 				{	
 					src : "images/alicia_soto/at.jpg",
@@ -53,7 +81,21 @@ var career = {
 					future: "Hace falta la respuesta del Profesor Revisor.",
 					details: "Implementación de un sistema de automatización de procesos de compra a proveedores y venta a clientes, además de archivado de transacciones, para gran empresa del retail. Proyecto desarrollado a través de empresa consultora Roboc.",
 					committeemembers: "Por definir.",
-					committeecomments: "Pendiente."
+					committeecomments: "Pendiente.",
+					tasks: [
+						{
+							taskname: "Envía anteproyecto.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Revisado por el profesor guía.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Enviado a ORE.",
+							checked: ''
+						}
+					]
 				}
 			]
 		},
@@ -83,7 +125,21 @@ var career = {
 					details: "Desarrollo de una aplicación móvil para documentar los gatitos dentro de un barrio, indicando su ubicación y preferencias, además de saber qué vecinos les han alimentado y encontrarles hogar.",
 					grade: "<span><strong>   Nota final: </strong> 3.5</span>",
 					committeemembers: "<li>Alejandra Acuña</li><li>Yuri Caceres</li><li>Nestor Gonzalez</li><li>Julian Gil</li><li>Jorge Cornejo</li>",
-					committeecomments: "El trabajo es interesante pero no trae ningún beneficio económico, su desarrollo y mantenimiento involucraría más costos que los que tiene esta fundación. Se rechaza el proyecto, y se sugiere cambiar el foco."
+					committeecomments: "El trabajo es interesante pero no trae ningún beneficio económico, su desarrollo y mantenimiento involucraría más costos que los que tiene esta fundación. Se rechaza el proyecto, y se sugiere cambiar el foco.",
+					tasks: [
+						{
+							taskname: "Envía anteproyecto.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Revisado por el profesor guía.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Enviado a ORE.",
+							checked: ''
+						}
+					]
 				}, 
 				{	
 					src : "images/carlos_perez/1-2.jpg",
@@ -97,7 +153,21 @@ var career = {
 					details: "Adaptación del software del mapa documentación de gatitos hacia uno que sí es viable comercialmente. El proyecto consiste en un mapa que permitirá a sus usuarios encontrar y avisar de aquellos locales comerciales que están atendiendo durante toque de queda, para que aquellos que requieren de productos de emergencia puedan acceder a ellos.",
 					grade: "<span><strong>   Nota final: </strong> 6.5</span>",
 					committeemembers: "<li>Alejandra Acuña</li><li>Yuri Caceres</li><li>Nestor Gonzalez</li><li>Julian Gil</li><li>Jorge Cornejo</li>",
-					committeecomments: "Mucho mejor que el anteproyecto de los gatitos. Muy bien, siga así."
+					committeecomments: "Mucho mejor que el anteproyecto de los gatitos. Muy bien, siga así.",
+					tasks: [
+						{
+							taskname: "Envía anteproyecto.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Revisado por el profesor guía.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Enviado a ORE.",
+							checked: ''
+						}
+					]
 				}, 
 				{	
 					src : "images/carlos_perez/2.jpg",
@@ -111,7 +181,21 @@ var career = {
 					details: "Adaptación del proyecto anterior, para adecuarse a la situación de cuarentena impuesta en el territorio nacional. Se consideran las condiciones establecidas por el Ministerio de Salud sobre el comercio y se procede acorde a ello.",
 					grade: "<span><strong>   Nota final: </strong> 6.5</span>",
 					committeemembers: "<li>Alejandra Acuña</li><li>Yuri Caceres</li><li>Nestor Gonzalez</li><li>Julian Gil</li><li>Jorge Cornejo</li>",
-					committeecomments: "Excelente trabajo que en cada iteración va adaptándose a lo requerido según la contingencia. Se sugiere mantener el proyecto como está y no volver a cambiarlo, pues hacerlo de nuevo es muy riesgoso."
+					committeecomments: "Excelente trabajo que en cada iteración va adaptándose a lo requerido según la contingencia. Se sugiere mantener el proyecto como está y no volver a cambiarlo, pues hacerlo de nuevo es muy riesgoso.",
+					tasks: [
+						{
+							taskname: "Envía anteproyecto.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Revisado por el profesor guía.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Enviado a ORE.",
+							checked: ''
+						}
+					]
 				}, 
                 {	
 					src : "images/carlos_perez/at.jpg",
@@ -124,7 +208,21 @@ var career = {
 					future: "Hace falta que entregue su tesis.",
 					details: "Aplicación móvil que permite encontrar los locales del comercio que están atendiendo durante una cuarentena. Permite la adición de parte de los usuarios de locales abiertos, utiliza los mapas de Mapcity, y entrega información comercial de los locales.",
 					committeemembers: "<li>Alejandra Acuña</li><li>Yuri Caceres</li><li>Nestor Gonzalez</li><li>Julian Gil</li><li>Jorge Cornejo</li>",
-					committeecomments: "Pendiente."
+					committeecomments: "Pendiente.",
+					tasks: [
+						{
+							taskname: "Envía anteproyecto.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Revisado por el profesor guía.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Enviado a ORE.",
+							checked: ''
+						}
+					]
 				}
 			]
 		},
@@ -154,7 +252,21 @@ var career = {
 					details: "Uso de software de realidad aumentada dentro de los procesos de diseño e innovación de empresas, entrenando algoritmos de redes neuronales con la detección de las acciones que realiza el portador del dispositivo de realidad aumentada.",
 					grade: "<span><strong>   Nota final: </strong> 7</span>",
 					committeemembers: "<li>Alejandra Acuña</li><li>Yuri Caceres</li><li>Nestor Gonzalez</li><li>Julian Gil</li><li>Jorge Cornejo</li>",
-					committeecomments: "Muy buen trabajo. Se recomienda enfocar a una aplicación más específica para la siguiente etapa del proyecto para poder tener un producto lanzable al mercado."
+					committeecomments: "Muy buen trabajo. Se recomienda enfocar a una aplicación más específica para la siguiente etapa del proyecto para poder tener un producto lanzable al mercado.",
+					tasks: [
+						{
+							taskname: "Envía anteproyecto.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Revisado por el profesor guía.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Enviado a ORE.",
+							checked: ''
+						}
+					]
 				},
 				{	
 					src : "images/daniela_riquelme/2.jpg",
@@ -168,7 +280,21 @@ var career = {
 					details: "Desarrollo de software de realidad aumentada para su uso en los procesos de diseño industrial e innovación, donde los usuarios estarán conectados a la nube para el procesamiento de las imagenes generadas con el dispositivo de realidad aumentada con fines de recolección de datos para entrenar una red neuronal.",
 					grade: "<span><strong>   Nota final: </strong> 7</span>",
 					committeemembers: "<li>Alejandra Acuña</li><li>Yuri Caceres</li><li>Nestor Gonzalez</li><li>Julian Gil</li><li>Jorge Cornejo</li>",
-					committeecomments: "A pesar de las posibles complicaciones técnicas que conlleva la dependencia de dispositivos en su proyecto, el avance constante de la estudiante y la disposición de la empresa de proveer todo lo necesario para la realización exitosa del proyecto ha dado frutos, y no hay nada que criticar. Excelente proyecto. Confiamos en que será la mejor ingeniera donde sea que le toque trabajar."
+					committeecomments: "A pesar de las posibles complicaciones técnicas que conlleva la dependencia de dispositivos en su proyecto, el avance constante de la estudiante y la disposición de la empresa de proveer todo lo necesario para la realización exitosa del proyecto ha dado frutos, y no hay nada que criticar. Excelente proyecto. Confiamos en que será la mejor ingeniera donde sea que le toque trabajar.",
+					tasks: [
+						{
+							taskname: "Envía anteproyecto.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Revisado por el profesor guía.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Enviado a ORE.",
+							checked: ''
+						}
+					]
 				}
 			]
 		},
@@ -198,7 +324,21 @@ var career = {
 					details: "Diseño e implementación de software para el ingreso y el seguimiento de los productos que requieren de servicio técnico, dentro del departamento de electrodomésticos de una multitienda. Permite al dueño del producto revisar el progreso de la reparación a través de internet, utilizando la aplicación móvil de la tienda.",
 					grade: "<span><strong>   Nota final: </strong> 6.0</span>",
 					committeemembers: "<li>Alejandra Acuña</li><li>Yuri Caceres</li><li>Nestor Gonzalez</li><li>Julian Gil</li><li>Jorge Cornejo</li>",
-					committeecomments: "Muy buena implementación. Se sugiere aumentar la disponibilidad del seguimiento de la reparación hacia cualquier dispositivo, no solo celulares. Falta mejorar la redacción del informe."
+					committeecomments: "Muy buena implementación. Se sugiere aumentar la disponibilidad del seguimiento de la reparación hacia cualquier dispositivo, no solo celulares. Falta mejorar la redacción del informe.",
+					tasks: [
+						{
+							taskname: "Envía anteproyecto.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Revisado por el profesor guía.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Enviado a ORE.",
+							checked: ''
+						}
+					]
 				}
 			]
 		},
@@ -228,7 +368,21 @@ var career = {
 					details: "Software conectado al banco de los locales comerciales que implementen este sistema, para realizar la conversión automática cada día de pesos chilenos a Bitcoins después de realizar conteo de caja, además de permitir pagar con Bitcoins a los clientes del local a través de su teléfono con NFC.",
 					grade: "<span><strong>   Nota final: </strong> 3.0</span>",
 					committeemembers: "<li>Alejandra Acuña</li><li>Yuri Caceres</li><li>Nestor Gonzalez</li><li>Julian Gil</li><li>Jorge Cornejo</li>",
-					committeecomments: "Muy mala orientación del proyecto. Abre la puerta a que las empresas que lo implementen cometan evasión de impuestos, considerando que las criptomonedas no están reguladas y no se puede tener certeza de los destinatarios de las transacciones realizadas."
+					committeecomments: "Muy mala orientación del proyecto. Abre la puerta a que las empresas que lo implementen cometan evasión de impuestos, considerando que las criptomonedas no están reguladas y no se puede tener certeza de los destinatarios de las transacciones realizadas.",
+					tasks: [
+						{
+							taskname: "Envía anteproyecto.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Revisado por el profesor guía.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Enviado a ORE.",
+							checked: ''
+						}
+					]
 				}
 			]
 		},
@@ -257,7 +411,21 @@ var career = {
 					future: "Debe enviar informe de proyecto.",
 					details: "Proyecto para implementar las mejores prácticas en materia de ciberseguridad dentro de la arquitectura en la nube de empresa bancaria. Se concientiza respecto al modelo de responsabilidad compartida entre el proveedor de los servicios en la nube y la empresa, se implementan tablas de ruteo y perfiles de usuario con diversos permisos dentro del servicio de Identity and Access Management, además de planificar una migración a otra nube donde se pueda tener una subred pública y una subred privada, para limitar el acceso externo hacia la información sensible de los clientes del banco.",
 					committeemembers: "<li>Alejandra Acuña</li><li>Yuri Caceres</li><li>Nestor Gonzalez</li><li>Julian Gil</li><li>Jorge Cornejo</li>",
-					committeecomments: "Pendiente."
+					committeecomments: "Pendiente.",
+					tasks: [
+						{
+							taskname: "Envía anteproyecto.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Revisado por el profesor guía.",
+							checked: 'checked=""'
+						},
+						{
+							taskname: "Enviado a ORE.",
+							checked: ''
+						}
+					]
 				}
 			]
 		},

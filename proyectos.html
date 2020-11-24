@@ -70,16 +70,18 @@
 
 
             <div class="container" id="page-content">
+                <br />
                 <h1>Proyectos de ingeniería</h1>
                 <p>A continuación puede revisar los proyectos de ingeniería disponibles.</p>
+                
+
                 <ul class="nav nav-tabs">
-                    <li class="nav-item" role=""><a class="nav-link active" href="#" id="proy1-tab"> Proyectos </a></li>
+                    <li class="nav-item" role=""><a class="nav-link active" href="#" id="students-tab"> Listado de estudiantes </a></li>
                 </ul>
-                <br/><br/>
-
-
+                <br/>
                 <!-- Empty content to be filled with templates -->
                 <div id="content-to-fill"  class="container-fluid"  role="main">
+                    
                 </div>
             </div>
 
@@ -92,9 +94,11 @@
      <script src="js/sidebar.js"></script>
      <script src="js/studentdata.js"></script>
      <script src="js/students.js"></script>
-     <script>$("document").ready(function() { 
-        $("#proy1-tab").trigger('click'); 
-    }); </script>
+     <script>
+        $("document").ready(function() { 
+            $("#students-tab").trigger('click'); 
+        });
+    </script>
 
         <!-- Student template -->
         <script id="students-template" type="text/x-handlebars-template">
@@ -119,11 +123,12 @@
             <div class="row">
                 <div class="col-xs-12 col-md-12">
                     <div class="row">
-                        
                         <div class="col-xs-12 col-md-7">
                             <h2> {{name}} {{surname}}
                                 <a href="tel:{{contactinfo.phone}}" title="Teléfono: {{contactinfo.phone}}" ><ion-icon name="call-outline" class="mr-2 lead"></ion-icon></a>
                                 <a href="mailto:{{contactinfo.email}}" title="Correo: {{contactinfo.mail}}"><ion-icon name="mail-outline" class="mr-2 lead"></ion-icon></a>
+                                <span style="float:right;"><button type="button" class="btn btn-light" style="border: 1px solid rgb(197, 197, 197);">Editar información personal</button></span>
+
                             </h2>
                             <ul>
                                 <li><strong>Situación</strong>: {{{status}}}</li>
@@ -144,7 +149,7 @@
             <div class="row">
                 {{#each projects}}
                 <div class="col-xs-12 col-md-3">
-                    <div class="card border-{{bscolor}} project-thumbnail" style="width: 95%; margin-bottom: 20px;" data-id="{{@index}}" >
+                    <div class="card border-{{bscolor}} project-thumbnail" data-id="{{@index}}" >
                         <img class="card-img-top" src="{{src}}" alt="">
                         <div class="card-body">
                             <h5 class="card-title">{{course}}</h5>
@@ -165,42 +170,118 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-8">
                             <div class="caption">
-                                <h2>{{title}}</h2>
+                                <h3>{{title}}</h3>
                                 <div class="h-divider"></div>
-                                <h4>{{course}}</h4>
+                                <h5 style="color: gray; font-weight: 300;">{{course}}                                <span style="float:right;"><button type="button" class="btn btn-light" style="border: 1px solid rgb(197, 197, 197);">Editar datos del proyecto</button></span>
+                                </h5>
+
+                                <div style="margin-top:20px;">
+                                    
                                 <ul>
-                                    <li><strong>Profesor guía</strong>: {{academic}}</li>
+                                    <li><strong>Profesor guía</strong>: {{academic}} </li>
                                     <li><strong>Profesor revisor</strong>: {{revisor}}</li>
                                     <li><strong>Estado del proyecto: <span class="text-{{bscolor}}">{{status}}</span></strong>. {{future}}</li>
                                 </ul>
+                                </div>
                             </div>
                         </div>
+                        <br /><br />
                         <div class="col-xs-12 col-md-4">
                             <img style="width:95%;" src="{{src}}" alt="" title="Imagen del proyecto" />
+                            
                         </div>
+                        
                     </div>
                     <div class="row">
                         <div class="h-divider"></div>
-                        <div class="col-12">
+                        <div class="col-12"><br />
                             <h4>Descripción del proyecto</h4>
                             <p>{{details}}</p>
+                            <br />
                         </div>
                         <div class="h-divider"></div>
+                    </div>
+                    <!-- Checklist -->
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <br />
+                            <div class="card-header card-header-tabs card-header-primary">
+                                <span class="nav-tabs-title"><h4>Tareas</h4></span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table">
+                                        {{#each tasks}}
+                                        
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input style="display: none;" class="form-check-input" type="checkbox" value="" {{{checked}}}>
+                                                        <span class="form-check-sign">
+                                                        <span class="check"></span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>{{taskname}}</td>
+                                            <td class="td-actions text-right">
+                                                <button type="button" rel="tooltip" title="Editar tarea" id="edit-button" class="btn btn-primary btn-link btn-sm">
+                                                    <ion-icon name="create-outline" class="mr-2 lead text-white"></ion-icon>
+                                                </button>
+                                                <button type="button" rel="tooltip" title="Remover tarea" id="edit-button" class="btn btn-danger btn-link btn-sm">
+                                                    <ion-icon name="close-outline" class="mr-2 lead text-white"></ion-icon>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        {{/each}}
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <br />
+                            <div class="card-header card-header-tabs card-header-primary">
+                                <span class="nav-tabs-title"><h4>Documentos</h4></span>
+                            </div>
+                            <div class="card-body">
+                                <div class="row" style="text-align: center;">
+                                    <div class="col-4">
+                                        <img src="images/informe.png" width="90%" class="project-document-thumbnail">
+                                        <button type="button" class="btn btn-light" style="border: 1px solid rgb(197, 197, 197);">Entrega 1</button>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="images/informe.png" width="90%" class="project-document-thumbnail">
+                                        <button type="button" class="btn btn-light" style="border: 1px solid rgb(197, 197, 197);">Entrega 2</button>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="images/tesis.png" width="90%" class="project-document-thumbnail">
+                                        <button type="button" class="btn btn-light" style="border: 1px solid rgb(197, 197, 197);">Tesis</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-divider"></div>
+
                     </div>
                     <div class="row">
                         <div class="col-xs-12 col-md-3">
-                            <h4>Comité evaluador</h4>
+                            <br />
+                            <h4>Comité evaluador <button type="button" rel="tooltip" title="Editar tarea" id="edit-button" class="btn btn-light btn-link btn-sm">
+                                <ion-icon name="create-outline" class="mr-2 lead text-black"></ion-icon></button></h4>
                             <ul>
                                 {{{committeemembers}}}
                             </ul>
-                            {{{grade}}}
+                            <p>{{{grade}}} <button type="button" rel="tooltip" title="Editar tarea" id="edit-button" class="btn btn-light btn-link btn-sm">
+                                <ion-icon name="create-outline" class="mr-2 lead text-black"></ion-icon></button></p>
                         </div>
                         <div class="col-xs-12 col-md-9">
-
+                            <br />
                             <br /><h5>Comentarios</h5>
                             <p>{{committeecomments}}</p>
+                            <span style="float:right;"><button type="button" class="btn btn-light" style="border: 1px solid rgb(197, 197, 197);">Agregar nuevo comentario</button></span>
                         </div>
-                    </div>
+                        
+                    </div><br /><br />
                 </div>
             </div>
         </script>

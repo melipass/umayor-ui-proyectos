@@ -23,14 +23,14 @@ $(document).ready(function(){
     project_template = Handlebars.compile(source);
 })
 
-$("#proy1-tab").click(function(){
+$("#students-tab").click(function(){
     showTemplate(students_template, career);
     $(".nav-tabs .active").removeClass("active");
-    $("#proy1-tab").addClass("active");
+    $("#students-tab").addClass("active");
     $(".student-thumbnail").click(function(){
         var index = $(this).data("id");
         current_student = career.students[index];
-        showTemplate(projects_template, current_student);
+        showTemplate(projects_template, career.students[index]);
         $(".project-thumbnail").click(function(){
             var index = $(this).data("id");
             current_project = current_student.projects[index];
@@ -38,5 +38,3 @@ $("#proy1-tab").click(function(){
         })
     })
 })
-
-$("#proy1-tab").click()
